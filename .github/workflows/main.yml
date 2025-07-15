@@ -1,0 +1,42 @@
+name: Al-Etha APP CI/CD
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  test:
+    name: Analyze and Test
+    runs-on: macos-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Setup Flutter
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.32.4"
+          channel: stable
+          architecture: x64
+          cache: true
+
+      # Setup Java for Android builds
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "zulu"
+          java-version: "17.x"
+      # Flutter clean
+      - name: Clean Flutter
+        run: flutter clean
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: flutter pub get
+
+      # Analyze the code
+      - name: Analyze Code
+        run: flutter analyze
