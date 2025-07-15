@@ -2,6 +2,20 @@
 
 A simple fitness app to help you achieve your fitness goals.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/1.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/2.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/3.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/4.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/5.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/6.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/7.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/8.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/9.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+  <img src="https://raw.githubusercontent.com/YoushahAnjumCh/AlethaHealth/master/assets/screenshots/10.png" alt="HomeScreen" width="200" style="display: inline-block; margin: 0 5px;" />
+</p>
+
+
 ## Architecture
 
 This app uses **Clean Architecture** to separate concerns and create a scalable and maintainable codebase. The architecture is divided into three main layers:
