@@ -26,6 +26,11 @@ This app uses **Clean Architecture** to separate concerns and create a scalable 
 
 This separation of concerns allows for a more modular, testable, and maintainable codebase. It follows the principles of **Clean Code**, emphasizing readability and simplicity.
 
+I  used the Gemini CLI for automate the generation of boilerplate code and documentation, accelerate workflow.
+
+Implemented CI/CD Pipeline for automation 
+
+
 ## How to Run the App
 
 1.  Make sure you have Flutter installed.
