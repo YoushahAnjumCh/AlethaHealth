@@ -71,7 +71,7 @@ class _ExerciseTimerViewState extends State<_ExerciseTimerView>
     final completionProvider = context.read<ExerciseCompletionProvider>();
 
     timerProvider.onComplete();
-    completionProvider.toggleCompletion(widget.exercise.id);
+    completionProvider.markAsCompleted(widget.exercise.id);
     context.read<StreakProvider>().recordExercise();
     Fluttertoast.showToast(
       msg: '🎉 Well done! Exercise Complete!',

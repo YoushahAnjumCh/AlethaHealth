@@ -66,6 +66,32 @@ class ExerciseCompletionProvider extends ChangeNotifier {
     }
   }
 
+  Future<void> markAsCompleted(String exerciseId) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final completedExercises =
+          prefs.getStringList('completed_exercises') ?? [];
+
+      if (!completedExercises.contains(exerciseId)) {
+        completedExercises.add(exerciseId);
+        await prefs.setStringList('completed_exercises', completedExercises);
+      }
+
+      final now = DateTime.now();
+      await prefs.setString(
+        'completion_time_$exerciseId',
+        now.toIso8601String(),
+      );
+
+      _completionStatus[exerciseId] = true;
+      _completionTimes[exerciseId] = now;
+
+      notifyListeners();
+    } catch (e) {
+      debugPrint('Error marking as complete: $e');
+    }
+  }
+
   Future<void> startExercise(String exerciseId) async {
     try {
       _isStartingExercise = true;
