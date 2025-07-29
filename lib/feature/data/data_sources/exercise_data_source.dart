@@ -28,9 +28,9 @@ class ExerciseDataSourceImpl implements ExerciseDataSource {
       }
     } catch (e) {
       if (e is FormatException) {
-        throw ServerFailure('Invalid JSON response from server', 0);
+        throw ServerFailure('Invalid JSON response from server', 500);
       } else {
-        throw ServerFailure('Failed to fetch exercises: ${e.toString()}', 0);
+        throw ServerFailure('Failed to fetch exercises: ${e.toString()}', 500);
       }
     }
   }
